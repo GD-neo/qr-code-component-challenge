@@ -1,0 +1,120 @@
+/* Set the colors that are to be used in this project */
+:root { 
+    --project-white: hsl(0, 0%, 100%);
+    --project-lightgrey: hsl(212, 45%, 89%);
+    --project-grayishblue: hsl(220, 15%, 55%);
+    --project-darkblue: hsl(218, 44%, 22%);
+    /* --project-pink: pink; */
+}
+/* Design for the Desktop */
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+main { 
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    background-color: var(--project-lightgrey);
+    justify-content: center;
+    align-items: center;
+}
+
+.card { 
+    
+    width: 290px;
+    height: 465px;
+    border: 1px solid var(--project-white);
+    border-radius: 1.2em;
+    box-shadow: 0px 4px 16px 0.1px var(--project-grayishblue);
+    
+    padding: 1em;
+    color: --project-darkblue  ;
+    background-color: var(--project-white);
+    text-align: center;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.qrcode { 
+    max-width: 100%;
+    height: auto;
+    /* border: 2px solid var(--project-white); */
+    border-radius: 0.75em;
+}
+
+p, h1 {
+    font-family: Outfit, Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--project-darkblue);
+    padding: 0px 5px;
+}
+
+p { 
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--project-grayishblue);
+    padding: 0px 15px;
+}
+
+.attribution { 
+    background-color: var(--project-lightgrey);
+    display: flex;
+    justify-content: space-around;
+}
+
+.attribution {
+    color: var(--project-darkblue);
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--project-grayishblue);
+}
+
+
+/* Using @media to to set breakpoints for mobile devices ie max-width: 375px  */
+@media (max-width: 370px){
+    .card { 
+    
+        width: 200px;
+        height: 320px;
+        border: 1px solid var(--project-white);
+        border-radius: 1.2em;
+        box-shadow: 0px 4px 16px 0.1px var(--project-grayishblue);
+        
+        padding: 1em;
+        color: --project-darkblue  ;
+        background-color: var(--project-white);
+        text-align: center;
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+    
+    .qrcode { 
+        max-width: 100%;
+        height: auto;
+        /* border: 2px solid var(--project-white); */
+        border-radius: 0.75em;
+    }
+    h1{
+        font-weight: 700;
+        font-size: 15px;
+        color: var(--project-darkblue);
+        padding: 0px 5px;
+    }
+    
+    p { 
+        font-size: 11px;
+        font-weight: 400;
+        color: var(--project-grayishblue);
+        padding: 0px 4px;
+    }
+}
